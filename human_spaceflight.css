@@ -1,0 +1,302 @@
+:root{
+    --tran : all 0.2s linear;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    Font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90vw;
+}
+.mission{
+    font-size: 1.5rem;
+}
+.mission_name{
+    font-size: 5rem; 
+    font-weight: 900;
+}
+.mission_detail{
+    font-size: 1.3rem; 
+    font-weight: lighter;
+}
+header{
+    background-image: url(astro.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -30px;
+    overflow-x: hidden;
+}
+#head-div-1{
+    color: white;
+    position: relative;
+    top: 35%;
+    font-size: 7rem;
+    font-weight: 900;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#head-div-2{
+    position: relative;
+    top: 32%;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#navbarNav{
+    position: relative;
+    margin-top: 5vh;
+    left: 18vw;
+    text-transform: uppercase;
+}
+#navbarNav li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#navbarNav li a{
+    color: white !important;
+    font-size: 1.1rem;
+}
+.horizontal_lists{
+    text-align: center;
+}
+.horizontal_lists li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.horizontal_lists li a{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#navbarNav li a{
+    padding-bottom: 1px !important;
+}
+a{
+    position: relative;
+}
+a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.25s ease-in-out;
+}
+a:hover:before{
+    width: 100%;
+
+}
+#main-div-1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+#main-div-2{
+    height: 90vh;
+    width: 100vw;
+    background-image: url(human_spaceflight_earth.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-left: 10%;
+    overflow-x: hidden;
+}
+#main-div-2 div{
+    position: relative;
+    top: 25%;
+    left: 50%;
+}
+.btn{
+    border: 1px solid white;
+    cursor: pointer;
+    transition: color 1s linear;
+    background-color: black; 
+    color: white; 
+    font-size: 1rem; 
+    height: 6vh; 
+    width: 10%; 
+    margin-top: 5%
+}
+button{
+    position: relative;
+    z-index: 1;
+    transition: var(--tran);
+    overflow: hidden;
+}
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: var(--tran);
+}
+button:hover:before{
+    transform: translateY(0);
+    z-index: -1;
+}
+button:hover{
+    color: black;
+}
+#main-div-3{
+    height: 80vh;
+    width: 100vw;
+    background-image: url(human_spaceflight_iss.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-left: 5%;
+    padding-top: 10%;
+    overflow-x: hidden;
+}
+#main-div-3 div{
+    position: relative;
+    left: 5%;
+    top: 7%;
+}
+#main-div-4{
+    height: 80vh;
+    width: 100vw;
+    background-image: url(human_spaceflight_moon.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+#main-div-4 div{
+    position: relative;
+    left: 60%;
+    top: 20%;
+}
+#main-div-5{
+    height: 70vh;
+    width: 100vw;
+    background-image: url(human_spaceflight_mars.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-left: 5%;
+    padding-top: 10%;
+    overflow-x: hidden;
+}
+#main-div-5 div{
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+.footer{
+    margin-top: -5vh;
+    width: 100vw;
+}
+#footer{
+    position: relative;
+    height: 10%;
+    top: 90%;
+}
+#footer-contact{
+    height: 5%;
+    position: relative;
+    top: 45%;
+    text-align: center;
+}
+#timeline{
+    position: relative;
+    top: 15%;
+    left: 50%;
+}
+#contact-area{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 5%;
+}
+@media (max-width: 1300px){
+    .mission_name{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    #navbarNav{
+        position: relative;
+        margin-top: 5vh;
+        left: 8vw;
+    }
+    #head-div-1{
+        font-size: 6rem;
+    }
+    #head-div-2{
+        position: relative;
+        top: 35%;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1200px){
+    #navbarNav{
+        position: relative;
+        margin-top: 5vh;
+        left: 5vw;
+    }
+    #navbarNav li{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #navbarNav li a{
+        color: white !important;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+}
+@media (max-width:999px){
+    #main-div-3 div{
+        position: relative;
+        left: 5%;
+        top: 15%;
+    }
+    #main-div-2 div{
+        position: relative;
+        left: 40%;
+        width: 60%;
+
+    }
+    #main-div-5 div{
+        position: relative;
+        left: 40%;
+        top: 15%;
+    }
+    .btn{
+        width: 20vw;
+    }
+    #head-div-1{
+        font-size: 3.5rem;
+    }
+    #head-div-2{
+        position: relative;
+        top: 35%;
+        font-size: 1rem;
+    }
+    #main-div-4 div{
+        position: relative;
+        left:50%;
+        width: 50%;
+    }
+    #main-div-5 div{
+        position: relative;
+        left: 5%;
+    }
+}
